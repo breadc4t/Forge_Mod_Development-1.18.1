@@ -1,5 +1,6 @@
 package com.breadc4t.mccourse;
 
+import com.breadc4t.mccourse.block.ModBlocks;
 import com.breadc4t.mccourse.item.ModItems;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
@@ -36,6 +37,7 @@ public class MCCourseMod
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(eventBus);
+        ModBlocks.register(eventBus);
 
         eventBus.addListener(this::setup); // listener
 

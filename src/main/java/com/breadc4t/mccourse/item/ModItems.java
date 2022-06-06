@@ -19,6 +19,7 @@ public class ModItems {
     public static final RegistryObject<Item> COBALT_NUGGET = ITEMS.register("cobalt_nugget",
             () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 
+    /** Register method for DeferredRegister and items*/
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
