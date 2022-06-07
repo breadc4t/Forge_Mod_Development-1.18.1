@@ -14,15 +14,15 @@ public class ModItems {
 
     /** Registers an item in game, appears in miscellaneous creative tab. */
     public static final RegistryObject<Item> COBALT_INGOT = ITEMS.register("cobalt_ingot",
-            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB)));
 
     /** Create another registry object for other items. */
     public static final RegistryObject<Item> COBALT_NUGGET = ITEMS.register("cobalt_nugget",
-            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB)));
 
     /** Raw cobalt item. */
     public static final RegistryObject<Item> RAW_COBALT = ITEMS.register("raw_cobalt",
-            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB)));
 
     /** Register method for DeferredRegister and items*/
     public static void register(IEventBus eventBus) {
